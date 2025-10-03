@@ -75,10 +75,11 @@ In Universal Decimal Time:
 
 This creates a consistent decimal system where all time units are powers of 10 relative to each other.
 
+Universal Decimal Time is designed to be independent of astronomical phenomena. It operates without leap years, simplifying calculations and providing a consistent, predictable calendar structure. Furthermore, it is not tied to any specific timezone, offering a universal time reference. The system is also independent from solar cycles.
+
 ## Documentation
 
 For complete documentation, see the  [development docs](https://imohag9.github.io/UniversalDecimalTime.jl/dev/).
-
 
 
 ## Contributing

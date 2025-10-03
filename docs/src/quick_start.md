@@ -99,7 +99,3 @@ string(udt)  # Returns "0010-03-01-01:UDT:05:30:75"
 udt_date_str = "0010-03-01-01:UDT"
 udt_date = UDTDate(udt_date_str)
 ```
-
-## Next Steps
-
-Check out the [Advanced Usage](advanced_usage.md) tutorial for more complex operations, or refer to the [API Reference](api.md) for complete documentation of all functions.

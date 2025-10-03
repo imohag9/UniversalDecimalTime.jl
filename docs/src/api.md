@@ -3,9 +3,8 @@
 CurrentModule = UniversalDecimalTime
 ```
 
-# Data Models
+# API Docs
 
-This section documents the key data models used throughout the UniversalDecimalTime.jl package.
 
 ```@autodocs
 Modules = [UniversalDecimalTime]
