@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Quick Start · UniversalDecimalTime.jl</title><meta name="title" content="Quick Start · UniversalDecimalTime.jl"/><meta property="og:title" content="Quick Start · UniversalDecimalTime.jl"/><meta property="twitter:title" content="Quick Start · UniversalDecimalTime.jl"/><meta name="description" content="Documentation for UniversalDecimalTime.jl."/><meta property="og:description" content="Documentation for UniversalDecimalTime.jl."/><meta property="twitter:description" content="Documentation for UniversalDecimalTime.jl."/><meta property="og:url" content="https://imohag9.github.io/UniversalDecimalTime.jl/quick_start/"/><meta property="twitter:url" content="https://imohag9.github.io/UniversalDecimalTime.jl/quick_start/"/><link rel="canonical" href="https://imohag9.github.io/UniversalDecimalTime.jl/quick_start/"/><script data-outdated-warner src="../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL=".."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../assets/documenter.js"></script><script src="../search_index.js"></script><script src="../siteinfo.js"></script><script src="../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../">UniversalDecimalTime.jl</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../">Home</a></li><li><a class="tocitem" href="../decimal_time_history/">Decimal Time History</a></li><li class="is-active"><a class="tocitem" href>Quick Start</a><ul class="internal"><li><a class="tocitem" href="#Installation"><span>Installation</span></a></li><li><a class="tocitem" href="#Basic-Usage"><span>Basic Usage</span></a></li><li><a class="tocitem" href="#Accessing-Components"><span>Accessing Components</span></a></li><li><a class="tocitem" href="#Converting-Between-Time-Systems"><span>Converting Between Time Systems</span></a></li><li><a class="tocitem" href="#Time-Arithmetic"><span>Time Arithmetic</span></a></li><li><a class="tocitem" href="#Parsing-and-Formatting"><span>Parsing and Formatting</span></a></li></ul></li><li><a class="tocitem" href="../conversions/">Conversions</a></li><li><a class="tocitem" href="../ranges/">Range Support</a></li><li><a class="tocitem" href="../api/">API Reference</a></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>Quick Start</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>Quick Start</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/imohag9/UniversalDecimalTime.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/imohag9/UniversalDecimalTime.jl/blob/main/docs/src/quick_start.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Quick-Start-Guide"><a class="docs-heading-anchor" href="#Quick-Start-Guide">Quick Start Guide</a><a id="Quick-Start-Guide-1"></a><a class="docs-heading-anchor-permalink" href="#Quick-Start-Guide" title="Permalink"></a></h1><p>This tutorial will help you get started with Universal Decimal Time in Julia.</p><h2 id="Installation"><a class="docs-heading-anchor" href="#Installation">Installation</a><a id="Installation-1"></a><a class="docs-heading-anchor-permalink" href="#Installation" title="Permalink"></a></h2><p>First, install the package:</p><pre><code class="language-julia hljs">using Pkg
+Pkg.add(&quot;UniversalDecimalTime&quot;)</code></pre><h2 id="Basic-Usage"><a class="docs-heading-anchor" href="#Basic-Usage">Basic Usage</a><a id="Basic-Usage-1"></a><a class="docs-heading-anchor-permalink" href="#Basic-Usage" title="Permalink"></a></h2><pre><code class="language-julia hljs">using UniversalDecimalTime
+
+# Create a UDT timestamp for year 2025, month 3, week 1, day 1, hour 5, minute 30, second 75
+udt = UDT(2025, 3, 1, 1, 5, 30, 75)
+# Output: 2025-03-01-01:UDT:05:30:75
+
+# Get current UDT time
+now_udt = udt_now()
+# Example output: 2025-03-01-01:UDT:05:30:75
+
+# Get today&#39;s UDT date
+today_udt = udt_today()
+# Example output: 2025-03-01-01:UDT</code></pre><h2 id="Accessing-Components"><a class="docs-heading-anchor" href="#Accessing-Components">Accessing Components</a><a id="Accessing-Components-1"></a><a class="docs-heading-anchor-permalink" href="#Accessing-Components" title="Permalink"></a></h2><p>You can access individual components of a UDT timestamp:</p><pre><code class="language-julia hljs">udt = UDT(2025, 3, 1, 1, 5, 30, 75)
+
+udt_year(udt)    # Returns 2025
+udt_month(udt)   # Returns 3
+udt_week(udt)    # Returns 1
+udt_day(udt)     # Returns 1
+udt_hour(udt)    # Returns 5
+udt_minute(udt)  # Returns 30
+udt_second(udt)  # Returns 75
+
+# Get multiple components at once
+udt_yearmonth(udt)     # Returns (2025, 3)
+udt_yearmonthweek(udt) # Returns (2025, 3, 1)</code></pre><h2 id="Converting-Between-Time-Systems"><a class="docs-heading-anchor" href="#Converting-Between-Time-Systems">Converting Between Time Systems</a><a id="Converting-Between-Time-Systems-1"></a><a class="docs-heading-anchor-permalink" href="#Converting-Between-Time-Systems" title="Permalink"></a></h2><pre><code class="language-julia hljs"># Convert from standard DateTime to UDT
+dt = DateTime(2025, 10, 2, 14, 30, 25)
+udt_time = UDT(dt)
+
+# Convert back to standard DateTime
+standard_time = DateTime(udt_time)
+
+# Convert between UDT and UDTDate
+udt = UDT(10, 3, 1, 1, 5, 30, 75)
+udt_date = UDTDate(udt)  # Keeps only date components
+udt_full = UDT(udt_date) # Sets time components to zero</code></pre><h2 id="Time-Arithmetic"><a class="docs-heading-anchor" href="#Time-Arithmetic">Time Arithmetic</a><a id="Time-Arithmetic-1"></a><a class="docs-heading-anchor-permalink" href="#Time-Arithmetic" title="Permalink"></a></h2><pre><code class="language-julia hljs">udt = UDT(10, 3, 1, 1, 5, 30, 75)
+
+# Add time
+udt + UDTYear(1)       # Add one UDT year
+udt + UDTMonth(2)      # Add two UDT months
+udt + UDTDay(5)        # Add five UDT days
+udt + UDTHour(3)       # Add three UDT hours
+udt + UDTMinute(150)   # Add 150 UDT minutes (will carry over)
+
+# Multiple additions
+udt + UDTYear(1) + UDTMonth(2) + UDTDay(5)
+
+# Subtraction
+udt - UDTYear(1)
+udt - UDTMonth(2)</code></pre><h2 id="Parsing-and-Formatting"><a class="docs-heading-anchor" href="#Parsing-and-Formatting">Parsing and Formatting</a><a id="Parsing-and-Formatting-1"></a><a class="docs-heading-anchor-permalink" href="#Parsing-and-Formatting" title="Permalink"></a></h2><pre><code class="language-julia hljs"># Parse from string
+udt_str = &quot;0010-03-01-01:UDT:05:30:75&quot;
+udt = UDT(udt_str)
+
+# Format as string
+string(udt)  # Returns &quot;0010-03-01-01:UDT:05:30:75&quot;
+
+# Parse UDTDate
+udt_date_str = &quot;0010-03-01-01:UDT&quot;
+udt_date = UDTDate(udt_date_str)</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../decimal_time_history/">« Decimal Time History</a><a class="docs-footer-nextpage" href="../conversions/">Conversions »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.14.1 on <span class="colophon-date" title="Friday 3 October 2025 22:06">Friday 3 October 2025</span>. Using Julia version 1.11.7.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
