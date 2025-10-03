@@ -60,14 +60,14 @@ Our implementation extends the decimal concept to the full calendar:
 
 This creates a consistent decimal system where all time units are powers of 10 relative to each other, making time calculations exceptionally straightforward.
 
-## Conversion Table
+## Conversion Table (approximation)
 
 | Unit | Seconds (SI) | Minutes | Hours | h:mm:ss.sss |
 |------|--------------|---------|-------|-------------|
 | 1 UDT second | 0.420768 | 0.0070128 | 0.00011688 | 0:00:00.421 |
 | 1 UDT minute | 42.0768 | 0.70128 | 0.011688 | 0:00:42.077 |
-| 1 UDT hour | 420.768 | 7.0128 | 0.11688 | 0:07:00.768 |
-| 1 UDT day | 4207.68 | 70.128 | 1.1688 | 1:10:07.680 |
+| 1 UDT hour | 4207.680 | 70.128 | 1.1688 | 1:17:28 |
+| 1 UDT day | 42076.8 | 701.28 | 11.688 | 11:40:15.680 |
 
 ## Historical Context
 
