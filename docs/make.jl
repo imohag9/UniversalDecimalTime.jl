@@ -17,6 +17,7 @@ makedocs(;
         "Home" => "index.md",
         "Decimal Time History" => "decimal_time_history.md",
         "Quick Start" => "quick_start.md",
+        "Constructors" => "constructors.md",
         "Conversions" => "conversions.md",
         "Range Support" => "ranges.md", 
         "API Reference" => "api.md",

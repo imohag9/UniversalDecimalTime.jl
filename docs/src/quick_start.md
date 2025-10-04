@@ -21,12 +21,12 @@ udt = UDT(2025, 3, 1, 1, 5, 30, 75)
 # Output: 2025-03-01-01:UDT:05:30:75
 
 # Get current UDT time
-now_udt = udt_now()
-# Example output: 2025-03-01-01:UDT:05:30:75
+@show udt_now()
+# Example output: 0019-03-01-08:UDT:06:75:75
 
 # Get today's UDT date
-today_udt = udt_today()
-# Example output: 2025-03-01-01:UDT
+@show udt_today()
+# Example output: 0019-03-01-08:UDT
 ```
 
 ## Accessing Components
